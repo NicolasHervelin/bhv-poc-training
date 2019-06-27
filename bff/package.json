@@ -1,0 +1,14 @@
+{
+  "name": "bff",
+  "version": "1.0.0",
+  "description": "Bff pour apprendre les bff",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest --updateSnapshot --passWithNoTests"
+  },
+  "keywords": [
+    "bff"
+  ],
+  "author": "bhv.fr",
+  "license": "MIT"
+}
