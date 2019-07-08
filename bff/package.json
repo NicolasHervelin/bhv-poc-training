@@ -4,11 +4,41 @@
   "description": "Bff pour apprendre les bff",
   "main": "index.ts",
   "scripts": {
+    "start": "node --inspect=5858 -r ts-node/register src/index.ts",
+    "dev": "nodemon",
     "test": "jest --updateSnapshot --passWithNoTests"
   },
   "keywords": [
     "bff"
   ],
   "author": "bhv.fr",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/graphql": "^14.2.0",
+    "@types/ip": "^1.1.0",
+    "@types/js-yaml": "^3.12.1",
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.2",
+    "@types/koa-morgan": "^1.0.4",
+    "@types/koa-router": "^7.0.40",
+    "@types/node": "^11.13.0",
+    "jest": "^24.6.0",
+    "nodemon": "^1.19.1",
+    "tslint": "^5.15.0",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.4.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "graphql": "^14.2.1",
+    "ip": "^1.1.5",
+    "js-yaml": "^3.13.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^7.4.0",
+    "winston": "^3.2.1"
+  }
 }
