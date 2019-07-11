@@ -5,3 +5,7 @@ export interface TProduct {
     img: string;
     price: string;
 }
+
+export interface TProducts {
+    products: TProduct[]
+}

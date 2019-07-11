@@ -1,18 +1,27 @@
 <template>
-    <div>
-        <ul>
-            <li> <p>UUID = {{ id }}</p> </li>
-            <li> <p>Name = {{ name }}</p> </li>
-            <li> <p>Description = {{ desc }}</p> </li>
-            <li> <img :src="img" alt="" /> </li>
-            <li> <p>Price = {{ price }}</p> </li>
-        </ul>
-    </div>
+    <ul>
+        <li>
+            <label>UUID : {{ id }}</label>
+        </li>
+        <li>
+            <p>Name : {{ name }}</p>
+        </li>
+        <li>
+            <p>Description : {{ desc }}</p>
+        </li>
+        <li>
+            <p>Image : </p>
+            <img :src="img" alt="" />
+        </li>
+        <li>
+            <p>Price : {{ price }}</p>
+        </li>
+    </ul>
 </template>
 
 <script lang="ts">
     import Component from 'vue-class-component';
-    import {Vue} from 'vue/types/vue';
+    import Vue from 'vue';
     import {Prop} from 'vue-property-decorator';
 
     @Component

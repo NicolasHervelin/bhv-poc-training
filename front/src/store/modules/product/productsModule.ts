@@ -22,7 +22,7 @@ class ProductsModule extends VuexModule {
     }
 
     @Mutation
-    public loadProducts(products: Array<Product>) {
+    public loadProducts(products: Product[]) {
         this.products = products;
     }
 }

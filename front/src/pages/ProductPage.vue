@@ -1,16 +1,16 @@
 <template>
-    <div id="app">
-        <h1>Home Page</h1>
+    <div id="product">
+
     </div>
 </template>
 
 <script lang="ts">
-    import Component from 'vue-class-component';
+    import Component from "vue-class-component";
     import {Vue} from "vue-property-decorator";
 
     @Component
-    export default class HomePage extends Vue {
-        name: 'homePage';
+    export default class ProductPage extends Vue{
+        name: 'productPage';
     }
 </script>
 

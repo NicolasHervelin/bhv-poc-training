@@ -1,4 +1,4 @@
-import {Vue} from "vue/types/vue";
+import Vue from "vue";
 import Router from 'vue-router';
 import HomePage from "@/pages/HomePage.vue";
 import ProductsPage from "@/pages/ProductsPage.vue";
@@ -12,18 +12,18 @@ export default new Router({
     routes: [
         {
             path: '/',
-            name: 'home',
+            name: 'homePage',
             component: HomePage
         },
         {
             path: '/products',
-            name: 'products',
+            name: 'productsPage',
             component: ProductsPage,
             props: true
         },
         {
             path: '/product/:id',
-            name: 'product',
+            name: 'productPage',
             component: ProductPage,
             props: true
         }

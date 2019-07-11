@@ -1,7 +1,8 @@
 <template>
-    <div v-if="products">
+    <div id="products-component">
         <ul>
-            <li v-for="product in products">
+            <li v-for="product in productList">
+                <p class="product-title">{{product.name}}</p>
                 <the-product :id="product.id" :name="product.name" :desc="product.desc" :img="product.img" :price="product.price"></the-product>
             </li>
         </ul>
@@ -10,12 +11,10 @@
 
 <script lang="ts">
     import {Prop} from 'vue-property-decorator';
-    import {Product} from '@/models/product';
     import Component from 'vue-class-component';
-    import {Vue} from 'vue/types/vue';
+    import Vue from 'vue';
     import TheProduct from '@/components/product/TheProduct.vue';
-    import products from '@/store/modules/product/productsModule'
-    //import { TProduct } from '@/bhv';
+    import {TProducts} from "@/bhv";
 
     @Component({
         components: {
@@ -25,18 +24,13 @@
 
     export default class ProductList extends Vue {
         @Prop()
-        products: Product[];
-
-        /*@Prop()
-        product: TProduct;*/
-
-        get productList() {
-            return products.getProducts;
-        }
-
+        productList: TProducts;
     }
 
 </script>
 
 <style scoped lang="scss">
+    .product-title {
+        font-weight: bold;
+    }
 </style>
