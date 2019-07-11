@@ -3,6 +3,7 @@
     "target": "esnext",
     "module": "esnext",
     "strict": true,
+    "strictPropertyInitialization": false,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
@@ -11,8 +12,12 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "rootDirs": ["src"],
     "types": [
       "webpack-env"
+    ],
+    "typeRoots": [
+      "node_modules/@types","./src/shims-vue.d.ts"
     ],
     "paths": {
       "@/*": [
