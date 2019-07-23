@@ -1,21 +1,21 @@
 {
   "products": [
     {
-      "id": "1",
+      "id": "3bd4356e-d9b0-452b-ac3e-eb530a5b636b",
       "name": "First product",
       "desc": "This is the first product description. Yes we did it !",
       "img": "static/images/first_img",
       "price": "1000"
     },
     {
-      "id": "2",
+      "id": "5c73fa1e-ad3d-11e9-a2a3-2a2ae2dbcce4",
       "name": "Second product",
       "desc": "This is the second product description. Yes we did it again !",
       "img": "static/images/second_img",
       "price": "2000"
     },
     {
-      "id": "3",
+      "id": "5c73fc76-ad3d-11e9-a2a3-2a2ae2dbcce4",
       "name": "Third product",
       "desc": "This is the third product description. Okay, stop it !",
       "img": "static/images/third_img",
