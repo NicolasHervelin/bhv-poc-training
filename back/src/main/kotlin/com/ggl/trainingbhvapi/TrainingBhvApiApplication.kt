@@ -9,3 +9,4 @@ class TrainingBhvApiApplication
 fun main(args: Array<String>) {
 	runApplication<TrainingBhvApiApplication>(*args)
 }
+

@@ -4,21 +4,21 @@
       "id": "1",
       "name": "First product",
       "desc": "This is the first product description. Yes we did it !",
-      "img": "images/first_img",
+      "img": "static/images/first_img",
       "price": "1000"
     },
     {
       "id": "2",
       "name": "Second product",
       "desc": "This is the second product description. Yes we did it again !",
-      "img": "images/second_img",
+      "img": "static/images/second_img",
       "price": "2000"
     },
     {
       "id": "3",
       "name": "Third product",
       "desc": "This is the third product description. Okay, stop it !",
-      "img": "images/third_img",
+      "img": "static/images/third_img",
       "price": "3000"
     }
   ]
