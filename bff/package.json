@@ -4,11 +4,17 @@
   "description": "Bff pour apprendre les bff",
   "main": "index.ts",
   "scripts": {
+    "start": "node --inspect=5858 -r ts-node/register src/index.ts",
+    "dev": "nodemon",
     "test": "jest --updateSnapshot --passWithNoTests"
   },
   "keywords": [
     "bff"
   ],
   "author": "bhv.fr",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
 }
